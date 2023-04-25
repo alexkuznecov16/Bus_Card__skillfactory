@@ -4,7 +4,6 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Business card</title>
-		<link rel="stylesheet" href="styles/style.css" />
 	</head>
 	<body>
 		<header>
@@ -18,13 +17,14 @@
 		<div class="about">
 			<h1>My name is <span style="color: red">Alex</span></h1>
 			<img
+				style="width: 70px"
 				src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
 				alt="VS code"
 			/>
 		</div>
 		<div class="inside">
 			<div class="education">
-				<h3 class="block-title">Education</h3>
+				<h2 class="block-title">Education</h2>
 				<ul>
 					<li>
 						<span class="educ-school-name">Jurmala School</span>
@@ -39,7 +39,7 @@
 				</ul>
 			</div>
 			<div class="experience">
-				<h3 class="block-title">Work experience</h3>
+				<h2 class="block-title">Work experience</h2>
 				<ul>
 					<li>
 						<span class="exp-company">Google</span>
@@ -55,8 +55,15 @@
 			</div>
 		</div>
 		<div class="history">
-			<p>I became to Frontend developer in 2023.</p>
+			<ol>
+				<li>HTML - 2000</li>
+				<li>CSS - 2001</li>
+				<li>JS - 2002</li>
+			</ol>
 		</div>
-		<footer>&copy;Alexander Kuznecov 2023</footer>
+		<footer>
+			<p>Phone: <a href="telto:+827648327648237">+70 (000) 00-00-00</a></p>
+			&copy;Alexander Kuznecov 2023
+		</footer>
 	</body>
 </html>
