@@ -3,67 +3,53 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="author" content="Alexander Kuznecov">
+		<meta name="description" content="Business card of Alexander Kuznecov">
 		<title>Business card</title>
+		<link rel="stylesheet" href="style/style.css">
+		<!-- Icons -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css"></link>
 	</head>
 	<body>
-		<header>
-			<nav>
+		<header class="header">
+			<nav class="header__nav">
 				<a href="#">About me</a>
-				<a href="#">Education</a>
-				<a href="#">Work experience</a>
-				<a href="#">Hobbies</a>
+				<a href="#">Skills</a>
+				<a href="#">Contacts</a>
 			</nav>
 		</header>
-		<div class="about">
-			<h1>My name is <span style="color: red">Alex</span></h1>
-			<img
-				style="width: 70px"
-				src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png"
-				alt="VS code"
-			/>
-		</div>
-		<div class="inside">
-			<div class="education">
-				<h2 class="block-title">Education</h2>
-				<ul>
-					<li>
-						<span class="educ-school-name">Jurmala School</span>
-						<span class="educ-name">Basic education</span>
-						<span class="educ-date">06.20xx - 06.20xx</span>
-					</li>
-					<li>
-						<span class="educ-school-name">Riga school</span>
-						<span class="educ-name">Second education</span>
-						<span class="educ-date">07.20xx - 06.20xx</span>
-					</li>
-				</ul>
-			</div>
-			<div class="experience">
-				<h2 class="block-title">Work experience</h2>
-				<ul>
-					<li>
-						<span class="exp-company">Google</span>
-						<span class="exp-job">Frontend developer</span>
-						<span class="exp-date">06.2014 - 06.2018</span>
-					</li>
-					<li>
-						<span class="exp-company">Spotify</span>
-						<span class="exp-job">Backend developer</span>
-						<span class="exp-date">07.2018 - present</span>
-					</li>
-				</ul>
-			</div>
-		</div>
-		<div class="history">
-			<ol>
-				<li>HTML - 2000</li>
-				<li>CSS - 2001</li>
-				<li>JS - 2002</li>
-			</ol>
-		</div>
-		<footer>
-			<p>Phone: <a href="telto:+827648327648237">+70 (000) 00-00-00</a></p>
-			&copy;Alexander Kuznecov 2023
-		</footer>
+		<main class="main">
+			<aside class="main__aside">
+				<img class="aside_img" src="img/face-logo.png" alt="My face">
+				<div class="aside_contacts">
+					<a href="tel:+7089201862">+7 123 45 67</a>
+					<a href="mailto:random@gmail.com">random@gmail.com</a>
+				</div>
+			</aside>
+			<section class="main__info">
+				<h3 class="info_name">Alexander Kuznecov | Frontend Developer</h3>
+				<div class="main__info_item">
+					<h2 class="info_title">About me</h2>
+					<p>I am living in the Latvian Republic right now. I am 15</p>
+				</div>
+				<div class="main__info_item">
+					<h2 class="info_title">Skills</h2>
+					<ul class="list">
+						<li class="list-item">HTML5</li>
+						<li class="list-item">CSS3</li>
+						<li class="list-item">JS</li>
+					</ul>
+				</div>
+				<div class="main__info_item">
+					<h2 class="info_title">Languages</h2>
+					<ul class="list">
+						<li class="list-item">Russian - <span>Native</span></li>
+						<li class="list-item">English - <span>Pre-Intermediate</span></li>
+						<li class="list-item">Latvian - <span>Intermediate</span></li>
+					</ul>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">&copy;Alexander Kuznecov &#x2022; 2023</footer>
 	</body>
 </html>
