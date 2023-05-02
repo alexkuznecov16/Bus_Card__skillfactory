@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 body,html{
     width: 100%;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Roboto';
 }
 
 *{
@@ -71,6 +74,10 @@ body,html{
 }
 
 .aside_contacts a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
     color: red;
     padding-bottom: 4px;
     border-bottom: 1px solid transparent;
